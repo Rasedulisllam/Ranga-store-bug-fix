@@ -12,10 +12,6 @@ body {
   padding: 5px 8px;
   /* border-radius: 8px 0 0 8px; */
 }
- .search-field:hover {
-  /* outline: none;
-  border: none; */
-}
 .search-box {
   border: 1px solid rgba(0, 9, 15, 0.698);
   width: 380px;
@@ -58,7 +54,7 @@ body {
   border-radius: 8px;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 3px 3px 8px rgba(128, 128, 128, 0.548);
   border-radius: 8px;
   /* border: 1px solid cyan; */
 }

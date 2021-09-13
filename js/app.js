@@ -17,6 +17,9 @@ const showProducts = (products) => {
       </div>
       <h4 class="my-3">${product.title}</h4>
       <p>Category: ${product.category}</p>
+      <p class='mb-0 fw-bold'>Overall rating</p>
+      <span class="my-1 fw-bold fs-2">${product.rating.rate}</span>
+      <p>Total <span class='fw-bold'>${product.rating.count}</span> Ratings</p>
       <h4>Price: $ ${product.price}</h4>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button id="details-btn" class="btn btn-danger">Details</button></div>
@@ -50,7 +53,7 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = Math.round(value);
+  document.getElementById(id).innerText =value.toFixed(2);
 };
 
 // update delivery charge and total Tax
