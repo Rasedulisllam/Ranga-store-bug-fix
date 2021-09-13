@@ -27,6 +27,8 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+// add cart price function
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -37,6 +39,7 @@ const addToCart = (id, price) => {
   updateTotal();
 };
 
+// get input value function
 const getInputValue = (id) => {
   const element = document.getElementById(id).innerText;
   const converted = parseFloat(element);
@@ -80,6 +83,5 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
-
 
 loadProducts();
